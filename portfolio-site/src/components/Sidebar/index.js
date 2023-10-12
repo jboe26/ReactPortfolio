@@ -18,7 +18,7 @@ import {
 import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
-    const [showNav, setShowNav] = useState(false);
+    const [setShowNav] = useState(false);
 
     return (
         <div className="nav-bar">
