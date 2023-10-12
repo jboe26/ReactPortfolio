@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-// import Loader from 'react-loaders'
 import './index.scss'
 
 const Home = () => {
