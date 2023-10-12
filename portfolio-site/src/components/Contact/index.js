@@ -14,7 +14,7 @@ const Contact = () => {
                         If you have any other requests, please use the form below to contact me.
                     </p>
                     <div className='contact-form'>
-                        <form netlify>
+                        <form name="contact" method="POST" netlify>
                             <ul>
                                 <li className='half'>
                                     <input type="text" name="name" placeholder='Name' required />
@@ -29,7 +29,7 @@ const Contact = () => {
                                 <textarea placeholder='Message' name="message" required></textarea>
                                 </li>
                                 <li>
-                                    <input type="submit" className='flat-button' value="Send" />
+                                <button type="submit" className='flat-button'>Send</button>
                                 </li>
                             </ul>
                         </form>
