@@ -1,29 +1,57 @@
-import React from 'react';
-import MickeyHerring from '../../assets/images/MickeyHerringTaxidermy.jpeg';
-import KathySite from '../../assets/images/KathysHomeandPet.jpeg'
-import './index.scss';
-import { Link } from 'react-router-dom'
-
+import React from "react";
+import MickeyHerring from "../../assets/images/MickeyHerringTaxidermy.jpeg";
+import KathySite from "../../assets/images/KathysHomeandPet.jpeg";
+import "./index.scss";
 
 const Portfolio = () => {
+  return (
+    <div className="container about-page">
+      <div className="text-zone">
+        <h1 className="portfolio-section">Portfolio</h1>
 
-    return (
-        <div className='container about-page'>
-            <div className='text-zone'>
-                <h1 className='portfolio-section'>Portfolio</h1>
-                
-                        <MickeyHerring text="Mickey Herring Taxidermy" />
-                            <h3>Mickey Herring Taxidermy</h3>
-                            <Link to="www.mickeyherringtaxidermy.org">Mickey Herring Taxidermy</Link>
-                        
-                        <KathySite text="Kathy's Home & Pet" />
-                            <h3>Kathy's Home & Pet</h3>
-                            <Link to="www.kathyshomeandpet.com">Kathy's Home & Pet</Link>
-                        
-            </div>
+        <h1 className="projects">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mickeyherringtaxidermy.org"
+          >
+            Mickey Herring Taxidermy
+          </a>
+        </h1>
+        <img
+          className="avatar"
+          src={MickeyHerring}
+          alt="taxidermy"
+          style={{
+            width: 400,
+            height: 300,
+          }}
+        />
 
-        </div>
-    )
-}
+        <h1 className="projects">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://kathyshomeandpet.com"
+          >
+            Kathy's Home & Pet
+          </a>
+        </h1>
+        <img
+          className="avatar"
+          src={KathySite}
+          alt="homepet"
+          style={{
+            width: 400,
+            height: 300,
+          }}
+        />
 
-export default Portfolio
+        <br />
+        <br />
+      </div>
+    </div>
+  );
+};
+
+export default Portfolio;

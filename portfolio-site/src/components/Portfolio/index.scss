@@ -16,3 +16,20 @@ img {
     animation: rotateIn 1s linear both;
     animation-delay: 1.4s;
   }
+
+  .projects {
+    font-size: 20px;
+    font-weight: 15%;
+    color: white;
+    font-family: 'Coolvetica';
+    position: relative;
+    margin: 5;
+    letter-spacing: 2px;
+  }
+
+  a { 
+    color: #fff; 
+    text-decoration: none; 
+    padding: 10px; 
+    font-size: 1.4rem; 
+} 

@@ -1,5 +1,4 @@
 import './index.scss'
-import { useState } from 'react'
 import LogoS from '../../assets/images/logo-s.jpg'
 // import LogoSubtitle from '../../assets/images/logo_sub.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -18,14 +17,12 @@ import {
 import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
-    const [setShowNav] = useState(false);
 
     return (
         <div className="nav-bar">
             <Link
                 className="logo"
-                to="/"
-                onClick={() => setShowNav(false)}>
+                to="/">
                 <img src={LogoS} alt="Logo" />
             </Link>
             <h1 className='name'>Josh Boepple</h1>
@@ -33,31 +30,25 @@ const Sidebar = () => {
                 <NavLink
                     exact="true"
                     activeclassname="active"
-                    to="/"
-                    onClick={() => setShowNav(false)}>
+                    to="/">
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                 </NavLink>
                 <NavLink
                     activeclassname="active"
                     className="about-link"
-                    to="/about"
-                    onClick={() => setShowNav(false)}>
+                    to="/about">
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                 </NavLink>
                 <NavLink
                     activeclassname="active"
                     className="portfolio-link"
-                    to="/portfolio"
-                    onClick={() => setShowNav(false)}
-                >
+                    to="/portfolio">
                     <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
                 </NavLink>
                 <NavLink
                     activeclassname="active"
                     className="contact-link"
-                    to="/contact"
-                    onClick={() => setShowNav(false)}
-                >
+                    to="/contact">
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                 </NavLink>
                 
