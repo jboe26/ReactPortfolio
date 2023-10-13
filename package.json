@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "react-rounded-image": "^2.0.15"
+    "react-rounded-image": "^2.0.15",
+    "styled-components": "^6.0.9"
   }
 }

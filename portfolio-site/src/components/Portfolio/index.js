@@ -3,6 +3,7 @@ import MickeyHerring from "../../assets/images/MickeyHerringTaxidermy.jpeg";
 import KathySite from "../../assets/images/KathysHomeandPet.jpeg";
 import "./index.scss";
 
+
 const Portfolio = () => {
   return (
     <div className="container about-page">
@@ -46,9 +47,7 @@ const Portfolio = () => {
             height: 300,
           }}
         />
-
-        <br />
-        <br />
+            
       </div>
     </div>
   );
