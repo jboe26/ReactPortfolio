@@ -1,4 +1,5 @@
 import './index.scss';
+import React from 'react';
 
 const Contact = () => {
 
@@ -14,7 +15,7 @@ const Contact = () => {
                         If you have any other requests, please use the form below to contact me.
                     </p>
                     <div className='contact-form'>
-                        <form name="contact" method="POST" netlify>
+                        <form name="contact" netlify>
                             <ul>
                                 <li className='half'>
                                     <input type="text" name="name" placeholder='Name' required />
@@ -35,6 +36,8 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
+             
+
             </div>
         </div>
 

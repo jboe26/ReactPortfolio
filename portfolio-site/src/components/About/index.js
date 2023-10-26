@@ -1,5 +1,5 @@
 import './index.scss';
-import ReactRoundedImage from "react-rounded-image";
+// import ReactRoundedImage from "react-rounded-image";
 import JoshPicture from '../../assets/images/joshpicture.jpg';
 
 
@@ -11,14 +11,15 @@ const About = () => {
                 <h1 className='about-section'>
                     About Me
                 </h1>
-                   <ReactRoundedImage
+                <img src={JoshPicture} className="joshpicture" alt="joshboepple" />;
+                   {/* <ReactRoundedImage
                     image={JoshPicture}
                     roundedColor=""
                     imageWidth="200"
                     imageHeight="200"
                     roundedSize="20"
                     borderRadius=""
-                />
+                /> */}
                 <p className='about-section'>Hi, I'm Josh. Nice to meet you!</p>
              
                 <p className='about-section'>I am passionate about building code and applications that improve the quality of companies

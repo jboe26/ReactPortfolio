@@ -76,7 +76,6 @@
       padding: 8px 10px;
       border: 1px solid #fff;
       float: left;
-      animation: fadeInAnimation 1s 1.8s backwards;
       border-radius: 4px;
       background: 0 0;
       text-transform: uppercase;
@@ -108,7 +107,6 @@
   }
   
   .info-map {
-    position: absolute;
     background: #000;
     top: 50px;
     right: 30%;
@@ -127,7 +125,7 @@
       font-size: 16px;
   
       span {
-        color: #fff;
+        color: #000;
       }
     }
   }
